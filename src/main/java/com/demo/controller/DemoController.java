@@ -14,7 +14,7 @@ public class DemoController {
 	@GetMapping("/message")
 	public String getMessage() {
 		
-		return "Hello !! this is just a demo app";
+		return "Modified code , to check POLL SCM";
 	}
 	
 
