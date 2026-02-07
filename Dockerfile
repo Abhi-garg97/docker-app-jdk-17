@@ -1,8 +1,8 @@
-FROM openjdk:17
+FROM eclipse-temurin:17-jdk
 
-COPY /target/docker-demo-app  /user/app/
+WORKDIR /user/app
 
-WORKDIR /user/app/
+COPY target/docker-demo-app.jar docker-demo-app.jar
 
 EXPOSE 8080
 
